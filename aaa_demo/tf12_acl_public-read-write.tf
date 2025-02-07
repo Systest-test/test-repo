@@ -8,8 +8,9 @@ provider "aws" {
 
 resource "aws_s3_bucket" "log_bucket" {
   bucket = "my-tf-log-bucket"
-  acl = "log-delivery-write"
+  acl    = "log-delivery-write"
   tags = {
     Demo = "log-delivery-write"
+    test = "test"
   }
 }
